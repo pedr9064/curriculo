@@ -14,10 +14,11 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 90%;
+    max-width: 1100px;
     margin: 40px auto;
     background-color: #252525;
-    padding: 40px;
+    padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -31,11 +32,11 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .name {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -45,7 +46,7 @@ header {
 }
 
 .contact-info p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #bdc3c7;
 }
 
@@ -62,15 +63,15 @@ header {
 
 /* Section Styles */
 section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 2em;
     color: #ecf0f1;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -78,15 +79,15 @@ h2 {
 h2::after {
     content: '';
     position: absolute;
-    width: 60px;
-    height: 5px;
+    width: 50px;
+    height: 4px;
     background-color: #f39c12;
     bottom: 0;
     left: 0;
 }
 
 p, ul {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #bdc3c7;
 }
 
@@ -118,11 +119,49 @@ ul li::before {
 
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 0.9em;
     color: #7f8c8d;
     border-top: 1px solid #444;
-    padding-top: 20px;
+    padding-top: 15px;
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    ul li {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    ul li::before {
+        font-size: 1.2em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
 }
 
 /* Animations */
